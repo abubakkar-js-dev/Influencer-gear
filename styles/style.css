@@ -20,6 +20,14 @@ body{
     border: none;
     background-color: #E02C6D;
     color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-primary:hover{
+    background-color: transparent;
+    color: #E02C6D;
+    border: 1px solid #E02C6D;
 }
 
 
@@ -115,6 +123,7 @@ nav{
 .collection-card-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    justify-content: center;
     gap: 30px;
     padding: 20px;
 }
@@ -174,4 +183,68 @@ nav{
 .collection-more-link i{
     margin-left: 5px;
     font-weight: bold;
+}
+/* featured collection section */
+.featured-products{
+    padding: 10px;
+    display: flex;
+    gap: 96px;
+    justify-content: space-between;
+    align-items: center;
+}
+.featured-product-img{
+    width: 35%;
+}
+.featured-products-content{
+    width: 65%;
+}
+.featured-title{
+    font-size: 2.37rem;
+    color: #0A0826;
+}
+.featured-description{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #6C6C6C;
+    margin: 16px 0;
+}
+.featured-btn{
+    width: 133px;
+
+}
+#footer{
+    max-width: 1170;
+    margin-top: 100px;
+    background-color: #0A0826;
+    padding: 50px 0;
+}
+.footer-content{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer-title{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+.footer-description{
+    font-size: 0.87rem;
+    color: #D9DBE1;
+    margin: 4px 0;
+}
+.footer-social{
+    color: #D9DBE1;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 20px 0;
+}
+.footer-social i{
+    font-size: 1.4rem;
+    width: 32px;
+    height: 32px;
+    
+
+
 }
