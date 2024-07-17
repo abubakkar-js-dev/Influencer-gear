@@ -28,7 +28,7 @@ header{
     margin: 0 auto;
 }
 section{
-    width: 1110px;
+    max-width: 1110px;
     margin: 0 auto;
     margin-top: 100px;
 }
@@ -36,6 +36,7 @@ section{
     font-size: 28px;
     font-weight: 600;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 /* nav section start */
@@ -99,12 +100,78 @@ nav{
 
 /* Company sponsers section */
 .sponsers-company{
+    margin: 0 auto;
     margin-top: 69px;
-    width: 1110px;
+    max-width: 1110px;
     /* height: 110px; */
     padding: 30px 0;
     display: flex;
     justify-content: space-evenly;
     box-shadow:  0px -4px 4px -4px rgba(0, 0, 0, 0.25),
                  0px 4px 4px -4px rgba(0, 0, 0, 0.25);
+}
+
+/* Collection section */
+.collection-card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    padding: 20px;
+}
+.card{
+    padding: 17px 15px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.card-img{
+    margin-bottom: 16px;
+}
+.card-img img{
+    width: 100%;
+}
+.card-title{
+    color: #18191F;
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+.card-price{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 5px;
+}
+.card-rating{
+    margin: 5px 0;
+    font-size: 0.87rem;
+    color: rgba(251, 130, 0, 1);
+}
+.card-rating .rating-number{
+    font-weight: bold;
+    color: #5E6366;
+    margin-left: 6px;
+
+
+}
+.card-description{
+    color: #787885;
+    font-size: 0.87rem;
+    font-weight: bold;
+}
+.collection-link-wrap{
+    text-align: right;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.collection-more-link{
+    text-decoration: none;
+    color: #E02C6D;
+    text-align: left;
+    font-size: 1rem;
+
+}
+.collection-more-link i{
+    margin-left: 5px;
+    font-weight: bold;
 }
